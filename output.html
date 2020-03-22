@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Elliptic Curve Diffie Hellman (ECDH) Implementation in PHP</title>
+	</head>
+	<style>
+		body {
+	  		font-family: 'Helvetica', 'Arial', 'sans-serif'; 
+			color: black;
+			font-size: 11pt;		
+		}
+	</style>
+	<body>
+		<h1>Elliptic Curve Diffie Hellman (ECDH) Implementation in PHP</h1>
+		<p>
+		A port of <a href='https://andrea.corbellini.name/'>Andrea Corbellini's</a> python <a href='https://github.com/andreacorbellini/ecc/tree/master/scripts'>ECDHE and ECDSA implementations</a> from python to PHP.  
+		Includes functions for ECDH key generation, ECDHE key exchange, and ECDSA signing and verification.<BR>
+		</p>
+		
+		<p>
+		<u>License</u><BR>
+		This project is licensed under the <a href='https://opensource.org/licenses/MIT'>MIT open source license</a>.
+		</p>
+		
+		<p>
+		<u>GitHub</u><BR>
+		<a href='https://github.com/meixler/ecdh-php'>https://github.com/meixler/ecdh-php</a>
+		</p>
+
+		<hr>
+		<h2>ECDHE</h2>
+		Curve: P-256<BR>
+		Alice's private key: 83fa38e02a57206c4511918143a59f0436e1c6a3548fe229b0811896bebdefba<BR>
+		Alice's public key: 399b78ec71064edffe55009efe436960d85577265606fc1402bd0ee740c9357a, 2bca324d6861d64f852c3f16e24e93da38f2a8f57bd878d7f4a31e213d6664a0<BR>
+		<BR>
+		Bob's private key: f6d2ac7df88818a417df2f4efe1cc10f22a29ad02bf73de19aeeaff066ddf14d<BR>
+		Bob's public key: 5752eabbaa8674b765d55364c3b498e47a6ca9ff7f3fd100f81c5167e1e93420, 7fbf89a01da825ab773672ed741eedf436c2c2e966ef20346607f97dd1ce5f6c<BR>
+		<BR>
+		Alice's shared secret: d1f4f891925c1bd1f55a2d2ec31cb70669a2fb049b709a13981e1967ceb20aa0, a8209e9d911a7a8177c8b14fe624db558a2ce49d365fadabf339330c5c513bb9<BR>
+		Bob's shared secret: d1f4f891925c1bd1f55a2d2ec31cb70669a2fb049b709a13981e1967ceb20aa0, a8209e9d911a7a8177c8b14fe624db558a2ce49d365fadabf339330c5c513bb9<BR>
+		<hr>
+		<h2>ECDSA</h2>
+		Curve: P-256<BR>
+		Private key: bc71227fa691674cc1cd1bc552f7fa710df9ee7866a0886446d65a3237819e67<BR>
+		Public key: be9de2253a18a252db88f0e4468700fd7d32f14b0f267d9f32b02e660079aca4, cecc1d381ac3b56ccce0f596e9ccbbee4692ecd62cef532502782e3d789bd10e<BR>
+		<BR>
+		Message: Hello!<BR>
+		Signature: f19d46e7398ab6e5c701d7066907cd017340d1ad1c323e3e4af77100018ba44e, bc436b1be58832cd625d22099b6527757e2ecab863f1262fcb1f8f669dbdee0e<BR>
+		Verification: 1<BR>
+		<BR>
+		Message: Hi there!<BR>
+		Verification: 0<BR>
+		<BR>
+		Message: Hello!<BR>
+		Public key: f01813ccf0c6a13b758b9330bd1474ef3bda764bf8f40da3b1563fe322e01b1a, f656884aae0e483ff4c6eecbae511b97fa94d9eac63e921010d0b90f8413ff51<BR>
+		Verification: 0<BR>
+	</body>
+</html>	
+
+
